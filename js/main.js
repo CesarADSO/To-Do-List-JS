@@ -31,3 +31,17 @@ function createToDoItem (textItem) {
     return item;
 
 }
+
+// DETECTAMOS EL EVENTO CLICK SOBRE EL BOTÓN + CON UN EVENTO DE ESCUCHA LISTENER 
+// PARA QUE A PARTIR DE ESTE EVENTO SE AGREGUE LA TAREA DENTRO DEL CONTENEDOR #cont-to-do-list 
+addBtn.addEventListener('click', () => {
+    const textItem = input.value.trim();
+    if (textItem == "") {
+        alert('No se puede crear una tarea vacia');
+    }
+    else {
+        const newItem = createToDoItem (textItem);
+        toDoList.appendChild(newItem);
+        input.value = "";
+    }
+});
