@@ -1,0 +1,126 @@
+/* CONFIGURACIÓN BÁSICA DE UN ARCHIVO CSS */
+
+/* 1. TIPOGRAFÍAS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 2. ICONOS */
+
+
+/* 3. ESTILOS GENERALES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p,
+a,
+button,
+li,
+label,
+input,
+select,
+textarea,
+span {
+    font-family: "Raleway", sans-serif;
+}
+
+/* 4. VARIABLES */
+
+:root {
+    --background-color: #f9fafb;
+    --primary-color: #111827;
+    --secundary-color: #6B7280;
+    --button-color: #3B82F6;
+    --check-task: #10B981;
+    --fs-title1: 60px;
+    --fs-title2: 38px;
+    --fs-title3: 22px;
+    --fs-title4: 18px;
+    --fs-text: 16px;
+}
+
+/* 5. DESKTOP */
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#global-content {
+    background-color: var(--background-color);
+    border: 1px solid var(--secundary-color);
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px ;
+}
+
+#global-content h1 {
+    font-size: var(--fs-title1);
+    color: var(--primary-color);
+    font-weight: 700;
+    text-align: center;
+}
+
+#global-content .hr-diferent {
+    border: 1px solid var(--button-color);
+}
+
+#global-content hr {
+    border: 1px dashed var(--button-color);
+}
+
+#global-content h2 {
+    font-size: var(--fs-title3);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#global-content form {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    
+}
+
+#global-content form input {
+    border: 1px solid var(--button-color);
+    width: 90%;
+    height: 40px;
+    background-color: #f7f7f7;
+}
+
+#global-content form button {
+    width: 50px;
+    height: 45px;
+    background-color: var(--button-color);
+    border: 1px solid var(--secundary-color);
+    cursor: pointer;
+    color: #fff;
+}
+
+.item-to-do {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--button-color);
+}
+
+.item-to-do input {
+    margin-right: 15px;
+}
+
+.item-to-do p {
+    font-size: var(--fs-text);
+    color: var(--primary-color);
+    width: 90%;
+}
+
+.item-to-do button {
+    width: 30px;
+    height: 30px;
+}

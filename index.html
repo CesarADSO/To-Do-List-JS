@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <section id="global-content">
 
         <h1>TO DO LIST</h1>
-        <hr>
+        <hr class="hr-diferent">
 
         <h2>ADD ITEM</h2>
         <form action="#">
-            <input type="text" placeholder="ingresa una tarea aquí">
-            <button type="button">+</button>
+            <input id="to-do-input" type="text" placeholder="ingresa una tarea aquí">
+            <button id="add-btn" type="button">+</button>
         </form>
 
         <hr>
@@ -24,16 +25,18 @@
             <div class="item-to-do">
                 <input type="checkbox">
                 <p>item list 1</p>
+                <button type="button">x</button>
             </div>
         </div>
 
         <hr>
         
         <h2>COMPLETED</h2>
-        <div id="cont-to-do-list">
+        <div id="cont-to-do-list-complete">
             <div class="item-to-do">
                 <input type="checkbox">
                 <p>item list 1</p>
+                <button type="button">x</button>
             </div>
         </div>
     </section>
