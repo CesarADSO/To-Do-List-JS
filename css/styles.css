@@ -143,6 +143,6 @@ body {
     margin-right: 10px;
 }
 
-#cont-to-do-list-complete p {
+#cont-to-do-list-complete .item-to-do p {
     text-decoration: line-through;
 }
