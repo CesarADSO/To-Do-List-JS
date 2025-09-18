@@ -101,14 +101,14 @@ btnStyle.addEventListener('click', () => {
 
         linkCss.setAttribute('href', 'css/styles-night.css');
 
-        btnStyle.textContent = 'Modo dia';
+        btnStyle.innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
 
     }
     else {
 
         linkCss.setAttribute('href', 'css/styles-day.css');
 
-        btnStyle.textContent = 'Modo Noche';
+        btnStyle.innerHTML = '<i class="bi bi-moon-fill"></i>';
 
     }
 
