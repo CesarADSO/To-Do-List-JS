@@ -131,9 +131,6 @@ body {
 .item-to-do button {
     width: 30px;
     height: 30px;
-    /* position: absolute;
-    right: 430px;
-    bottom: 222px; */
     background: red;
     border: none;
     cursor: pointer;
@@ -145,4 +142,16 @@ body {
 
 #cont-to-do-list-complete .item-to-do p {
     text-decoration: line-through;
+}
+
+#change-styles {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 20px;
+    background: var(--button-color);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
