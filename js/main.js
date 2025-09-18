@@ -1,6 +1,14 @@
 // CREAMOS LAS CONSTANTES PARA LOS ELEMENTOS PRINCIPALES
 
 const input = document.getElementById('to-do-input');
+
+input.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enter en formularios ( )
+        addBtn.click(); // Simula un clic en el botón de añadir
+    }
+});
+
 const addBtn = document.getElementById('add-btn');
 const toDoList = document.getElementById('cont-to-do-list');
 const completedList = document.getElementById('cont-to-do-list-complete');
