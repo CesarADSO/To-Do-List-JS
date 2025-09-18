@@ -53,12 +53,13 @@ body {
 
 #global-content {
     background-color: var(--background-color);
-    border: 1px solid var(--secundary-color);
+    border: 1px solid var(--button-color);
     padding: 40px;
     max-width: 700px;
     width: 100%;
     margin-top: 40px;
     margin-bottom: 40px ;
+    border-radius: 10px;
 }
 
 #global-content h1 {
@@ -80,11 +81,12 @@ body {
     font-size: var(--fs-title3);
     color: var(--primary-color);
     font-weight: 600;
+    text-align: center;
 }
 
 #global-content form {
     width: 100%;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 20px 0;
     
 }
 
@@ -93,6 +95,7 @@ body {
     width: 90%;
     height: 40px;
     background-color: #f7f7f7;
+    border-radius: 10px;
 }
 
 #global-content form button {
@@ -102,16 +105,21 @@ body {
     border: 1px solid var(--secundary-color);
     cursor: pointer;
     color: #fff;
+    border-radius: 5px;
 }
 
 .item-to-do {
     display: flex;
     width: 100%;
     border: 1px solid var(--button-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .item-to-do input {
     margin-right: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
 }
 
 .item-to-do p {
@@ -123,4 +131,18 @@ body {
 .item-to-do button {
     width: 30px;
     height: 30px;
+    /* position: absolute;
+    right: 430px;
+    bottom: 222px; */
+    background: red;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#cont-to-do-list-complete p {
+    text-decoration: line-through;
 }
